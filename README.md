@@ -1,12 +1,10 @@
 # IoTAA-MSFT-Lab
-A hands-on workshop for connecting, managing, and monitoring devices in Azure IoT Central.
-
 Welcome!
 
 This is a hands-on workshop for connecting, managing, and monitoring deviecs in Azure IoT Central.
 
 # Tools Required
-In this Lab, you'll be connecting the MXChip IoT DevKit into Microsoft's new Azure IoT Central platform. 
+In this Lab, you'll be walking through Microsoft's new IoT Central platform and connecting a simulated device.
 
 Here's what's required to complete the lab:
 - A Windows Live account for [Azure IoT Central](https://azure.microsoft.com/en-us/services/iot-central/)

@@ -12,7 +12,7 @@ const BME280_OPTION = {
   i2cAddress: BME280.BME280_DEFAULT_I2C_ADDRESS() // defaults to 0x77
 };
 
-const connectionString = '[IoTHubConnectionString]';
+const connectionString = '[Your IoT hub device connection string]';
 const LEDPin = 4;
 
 var sendingMessage = false;
@@ -27,8 +27,12 @@ function getMessage(cb) {
       cb(JSON.stringify({
         messageId: messageId,
         deviceId: 'Raspberry Pi Web Client',
-        temperature: data.temperature_C,
-        humidity: data.humidity
+        temp: data.temperature_C,
+        humidity: data.humidity,
+        pressure: data.pressure_hPa,
+        accelerometerX: Math.random()*(4000)-2000,
+        accelerometerY: Math.random()*(4000)-2000,
+        accelerometerZ: Math.random()*(4000)-2000
       }), data.temperature_C > 30);
     })
     .catch(function (err) {
